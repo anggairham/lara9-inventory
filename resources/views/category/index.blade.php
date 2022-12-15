@@ -29,7 +29,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped tabl-emd">
+                            <table class="table table-bordered table-striped table-md">
                                 <tr>
                                     <th width="5%">No</th>
                                     <th>Name</th>
@@ -75,5 +75,5 @@
 @push('scripts')
     <!-- JS Libraies -->
 
-    <!-- Page Specific JS File -->
+    <!-- Page Specific JS File --> 
 @endpush
