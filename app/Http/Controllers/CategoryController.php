@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class CategoryController extends Controller
 {
+    public function __construct()
+    {
+        // Sharing is caring
+        View::share('title', 'Category');
+    }
     /**
      * Display a listing of the resource.
      *
