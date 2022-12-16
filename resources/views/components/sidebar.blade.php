@@ -83,10 +83,18 @@
                     </ul>
                 </li> 
                 <li class="nav-item">
-                    <a href="{{ url('category') }}" class="nav-link {{ Request::is('category') ? 'active' : '' }}">
+                    <a href="{{ url('category') }}" class="nav-link {{ Request::is('category*') ? 'active' : '' }}">
                         <i class="nav-icon far fa-image"></i>
                         <p>
                             Category
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url('unit') }}" class="nav-link {{ Request::is('unit*') ? 'active' : '' }}">
+                        <i class="nav-icon far fa-image"></i>
+                        <p>
+                            Unit
                         </p>
                     </a>
                 </li>

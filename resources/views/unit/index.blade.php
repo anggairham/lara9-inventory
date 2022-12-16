@@ -36,7 +36,7 @@
                 <h3 class="card-title">{{ $title }}</h3>
 
                 <div class="card-tools"> 
-                <a class="btn btn-sm btn-success" href="{{ route('category.create') }}"> Create New {{ $title }}</a>
+                <a class="btn btn-sm btn-success" href="{{ route('unit.create') }}"> Create New {{ $title }}</a>
                 </div>
             </div>
             <div class="card-body">
@@ -47,18 +47,18 @@
                             <th>Name</th>
                             <th width="280px">Action</th>
                         </tr>
-                        @foreach ($category as $data)
+                        @foreach ($unit as $data)
                             <tr>
                                 <td>{{ ++$i }}</td>
-                                <td>{{ $data->category_name }}</td>
+                                <td>{{ $data->unit_name }}</td>
                                 <td>
-                                    <form action="{{ route('category.destroy', $data->id) }}" method="POST">
+                                    <form action="{{ route('unit.destroy', $data->id) }}" method="POST">
 
                                         <a class="btn btn-xs btn-info"
-                                            href="{{ route('category.show', $data->id) }}">Show</a>
+                                            href="{{ route('unit.show', $data->id) }}">Show</a>
 
                                         <a class="btn btn-xs btn-primary"
-                                            href="{{ route('category.edit', $data->id) }}">Edit</a>
+                                            href="{{ route('unit.edit', $data->id) }}">Edit</a>
 
                                         @csrf
                                         @method('DELETE')
@@ -72,7 +72,7 @@
                     </table>
                 </div>
                 <div class="row text-center">
-                    {!! $category->links() !!}
+                    {!! $unit->links() !!}
                 </div>
             </div>
             <!-- /.card-body -->
