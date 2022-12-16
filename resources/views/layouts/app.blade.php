@@ -49,7 +49,7 @@
     <!-- AdminLTE App -->
     <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="{{ asset('dist/js/demo.js') }}"></script>
+    <script src="{{ asset('dist/js/demo.js?v=21') }}"></script>
 
     @stack('scripts')
 </body>
